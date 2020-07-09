@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"keyboard"
 	"log"
 )
 
 func main() {
 	fmt.Print("Enter a temperature in Fahrenheit: ")
-	fahrenheit, err := getFloat()
+	fahrenheit, err := keyboard.GetFloat()
 	if err != nil {
 		log.Fatal(err)
 	}
